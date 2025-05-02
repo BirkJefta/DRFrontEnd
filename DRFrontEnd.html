@@ -6,6 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="item in items" :key="item.id">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.value }}</td>
+        </tr>
+      </tbody>
+    </table>
 </body>
 </html>
